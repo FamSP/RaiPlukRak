@@ -378,11 +378,11 @@ let product = [
       
         for (const productId in cart) {
           const item = cart[productId];
-          const itemTotalPrice = item.quantity * item.price;
+          const itemTotalPrice = item.count * item.price;
           receiptContent += `
             <tr>
-              <td>${productId}</td>
-              <td>${item.quantity}</td>
+              <td>${item.name}</td>
+              <td>${item.count}</td>
               <td>฿${item.price}</td>
               <td>฿${itemTotalPrice}</td>
             </tr>
